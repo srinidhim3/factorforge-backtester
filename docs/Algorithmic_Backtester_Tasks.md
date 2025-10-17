@@ -1,10 +1,10 @@
 # **Project Setup**
-- [ ] Set up project repository and folder structure (`repo root`): Initialize Git, create folders for `data`, `engine`, `api`, `ui`, `tests`, and `docs`. Acceptance: All folders exist, Git initialized.
-- [ ] Create and commit `requirements.txt` with core dependencies (`repo root`): Add pandas, numpy, yfinance, fastapi, streamlit, pytest, etc. Acceptance: File lists all required packages, installs without error.
-- [ ] Configure Python environment and virtualenv (`repo root`): Create and activate virtual environment, install dependencies. Acceptance: `python -m pip list` shows all packages.
+- [x] Set up project repository and folder structure (`repo root`): Initialize Git, create folders for `data`, `engine`, `api`, `ui`, `tests`, and `docs`. Acceptance: All folders exist, Git initialized.
+- [x] Create and commit `requirements.txt` with core dependencies (`repo root`): Add pandas, numpy, yfinance, fastapi, streamlit, pytest, etc. Acceptance: File lists all required packages, installs without error.
+- [x] Configure Python environment and virtualenv (`repo root`): Create and activate virtual environment, install dependencies. Acceptance: `python -m pip list` shows all packages.
 
 # **Data Ingestion & Storage**
-- [ ] Implement price data fetcher (`data/price_fetcher.py`): Function to download adjusted prices for tickers using yfinance. Acceptance: Returns DataFrame with correct columns for sample tickers/dates.
+- [x] Implement price data fetcher (`data/price_fetcher.py`): Function to download adjusted prices for tickers using yfinance. Acceptance: Returns DataFrame with correct columns for sample tickers/dates.
 - [ ] Build raw snapshot storage (`data/snapshot_store.py`): Save fetched data as immutable parquet/CSV files. Acceptance: Files written/read, reproducible by ID.
 - [ ] Add basic data hygiene checks (`data/normalizer.py`): Validate time index, fill/flag gaps, handle splits/dividends. Acceptance: Output DataFrame is clean, gaps flagged.
 
