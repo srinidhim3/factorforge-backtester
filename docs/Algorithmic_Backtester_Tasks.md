@@ -5,7 +5,7 @@
 
 # **Data Ingestion & Storage**
 - [x] Implement price data fetcher (`data/price_fetcher.py`): Function to download adjusted prices for tickers using yfinance. Acceptance: Returns DataFrame with correct columns for sample tickers/dates.
-- [ ] Build raw snapshot storage (`data/snapshot_store.py`): Save fetched data as immutable parquet/CSV files. Acceptance: Files written/read, reproducible by ID.
+- [x] Build raw snapshot storage (`data/snapshot_store.py`): Save fetched data as immutable parquet/CSV files. Acceptance: Files written/read, reproducible by ID.
 - [ ] Add basic data hygiene checks (`data/normalizer.py`): Validate time index, fill/flag gaps, handle splits/dividends. Acceptance: Output DataFrame is clean, gaps flagged.
 
 # **Feature Store & Engineering**
