@@ -6,10 +6,10 @@
 # **Data Ingestion & Storage**
 - [x] Implement price data fetcher (`data/price_fetcher.py`): Function to download adjusted prices for tickers using yfinance. Acceptance: Returns DataFrame with correct columns for sample tickers/dates.
 - [x] Build raw snapshot storage (`data/snapshot_store.py`): Save fetched data as immutable parquet/CSV files. Acceptance: Files written/read, reproducible by ID.
-- [ ] Add basic data hygiene checks (`data/normalizer.py`): Validate time index, fill/flag gaps, handle splits/dividends. Acceptance: Output DataFrame is clean, gaps flagged.
+- [x] Add basic data hygiene checks (`data/normalizer.py`): Validate time index, fill/flag gaps, handle splits/dividends. Acceptance: Output DataFrame is clean, gaps flagged.
 
 # **Feature Store & Engineering**
-- [ ] Implement feature computation pipeline (`features/feature_store.py`): Calculate returns, moving averages, signals, and save with metadata. Acceptance: Features saved/loaded, metadata present.
+- [x] Implement feature computation pipeline (`features/feature_store.py`): Calculate returns, moving averages, signals, and save with metadata. Acceptance: Features saved/loaded, metadata present.
 - [ ] Add provenance logging for features (`features/provenance.py`): Log source, parameters, and timestamp for each feature. Acceptance: Log file/DB updated per run.
 
 # **Strategy Interface**
